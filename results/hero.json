@@ -1,0 +1,58 @@
+{
+  "config": "patchcore_wr50_10",
+  "seed": 0,
+  "target_false_reject": 0.05,
+  "defects_outside_crop": [
+    [
+      "grid",
+      "test/glue/008.png"
+    ]
+  ],
+  "frames": [
+    {
+      "role": "typical defect",
+      "category": "screw",
+      "image": "test/scratch_neck/008.png",
+      "defective": true,
+      "score": 2.4354,
+      "threshold": 1.713175,
+      "outcome": "correct reject"
+    },
+    {
+      "role": "typical good part",
+      "category": "bottle",
+      "image": "test/good/016.png",
+      "defective": false,
+      "score": 1.382341,
+      "threshold": 1.589192,
+      "outcome": "correct accept"
+    },
+    {
+      "role": "closest call that was caught",
+      "category": "screw",
+      "image": "test/manipulated_front/011.png",
+      "defective": true,
+      "score": 1.713515,
+      "threshold": 1.713175,
+      "outcome": "correct reject"
+    },
+    {
+      "role": "lowest-scoring defect",
+      "category": "screw",
+      "image": "test/thread_side/009.png",
+      "defective": true,
+      "score": 1.504979,
+      "threshold": 1.713175,
+      "outcome": "ESCAPE: defect passed"
+    },
+    {
+      "role": "highest-scoring good part",
+      "category": "zipper",
+      "image": "test/good/022.png",
+      "defective": false,
+      "score": 1.799422,
+      "threshold": 1.387065,
+      "outcome": "FALSE REJECT: good part refused"
+    }
+  ]
+}

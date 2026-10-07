@@ -1,0 +1,1329 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "calibration_fraction": 0.2,
+  "target_false_reject": 0.05,
+  "counts": {
+    "bottle": {
+      "train_good": 209,
+      "test_good": 20,
+      "test_defective": 63
+    },
+    "grid": {
+      "train_good": 264,
+      "test_good": 21,
+      "test_defective": 57
+    },
+    "metal_nut": {
+      "train_good": 220,
+      "test_good": 22,
+      "test_defective": 93
+    },
+    "screw": {
+      "train_good": 320,
+      "test_good": 41,
+      "test_defective": 119
+    },
+    "zipper": {
+      "train_good": 240,
+      "test_good": 32,
+      "test_defective": 119
+    }
+  },
+  "held_out_good": {
+    "bottle": 42,
+    "grid": 53,
+    "metal_nut": 44,
+    "screw": 64,
+    "zipper": 48
+  },
+  "benchmark": {
+    "device": [
+      "cuda"
+    ],
+    "wall_clock_seconds": 742.2
+  },
+  "accuracy": {
+    "padim_r18": {
+      "bottle": {
+        "image_auroc": {
+          "mean": 0.9971,
+          "min": 0.996,
+          "max": 0.9984
+        },
+        "pixel_auroc": {
+          "mean": 0.9796,
+          "min": 0.9787,
+          "max": 0.9809
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9974,
+          "min": 0.996,
+          "max": 0.9992
+        }
+      },
+      "grid": {
+        "image_auroc": {
+          "mean": 0.9223,
+          "min": 0.8855,
+          "max": 0.9482
+        },
+        "pixel_auroc": {
+          "mean": 0.9361,
+          "min": 0.9216,
+          "max": 0.959
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9204,
+          "min": 0.878,
+          "max": 0.9457
+        }
+      },
+      "metal_nut": {
+        "image_auroc": {
+          "mean": 0.9829,
+          "min": 0.9765,
+          "max": 0.9863
+        },
+        "pixel_auroc": {
+          "mean": 0.9628,
+          "min": 0.9538,
+          "max": 0.9699
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9816,
+          "min": 0.9751,
+          "max": 0.9858
+        }
+      },
+      "screw": {
+        "image_auroc": {
+          "mean": 0.7907,
+          "min": 0.7676,
+          "max": 0.8258
+        },
+        "pixel_auroc": {
+          "mean": 0.9734,
+          "min": 0.9722,
+          "max": 0.9748
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.7678,
+          "min": 0.737,
+          "max": 0.8258
+        }
+      },
+      "zipper": {
+        "image_auroc": {
+          "mean": 0.8953,
+          "min": 0.8718,
+          "max": 0.911
+        },
+        "pixel_auroc": {
+          "mean": 0.9819,
+          "min": 0.9806,
+          "max": 0.983
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.8921,
+          "min": 0.8697,
+          "max": 0.9055
+        }
+      },
+      "mean": {
+        "image_auroc": 0.9177,
+        "pixel_auroc": 0.9668,
+        "image_auroc_gate_fit": 0.9119
+      }
+    },
+    "patchcore_r18_1": {
+      "bottle": {
+        "image_auroc": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "pixel_auroc": {
+          "mean": 0.9774,
+          "min": 0.9772,
+          "max": 0.9775
+        },
+        "image_auroc_gate_fit": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "grid": {
+        "image_auroc": {
+          "mean": 0.9521,
+          "min": 0.9457,
+          "max": 0.9599
+        },
+        "pixel_auroc": {
+          "mean": 0.9587,
+          "min": 0.9539,
+          "max": 0.9637
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9543,
+          "min": 0.9507,
+          "max": 0.9591
+        }
+      },
+      "metal_nut": {
+        "image_auroc": {
+          "mean": 0.9967,
+          "min": 0.9946,
+          "max": 0.998
+        },
+        "pixel_auroc": {
+          "mean": 0.9763,
+          "min": 0.9754,
+          "max": 0.9771
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9979,
+          "min": 0.9966,
+          "max": 0.999
+        }
+      },
+      "screw": {
+        "image_auroc": {
+          "mean": 0.952,
+          "min": 0.942,
+          "max": 0.9606
+        },
+        "pixel_auroc": {
+          "mean": 0.9858,
+          "min": 0.9845,
+          "max": 0.9871
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9288,
+          "min": 0.9123,
+          "max": 0.943
+        }
+      },
+      "zipper": {
+        "image_auroc": {
+          "mean": 0.9784,
+          "min": 0.9727,
+          "max": 0.9827
+        },
+        "pixel_auroc": {
+          "mean": 0.9858,
+          "min": 0.9857,
+          "max": 0.9859
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9821,
+          "min": 0.9787,
+          "max": 0.9882
+        }
+      },
+      "mean": {
+        "image_auroc": 0.9758,
+        "pixel_auroc": 0.9768,
+        "image_auroc_gate_fit": 0.9726
+      }
+    },
+    "patchcore_wr50_1": {
+      "bottle": {
+        "image_auroc": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "pixel_auroc": {
+          "mean": 0.9831,
+          "min": 0.9829,
+          "max": 0.9833
+        },
+        "image_auroc_gate_fit": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "grid": {
+        "image_auroc": {
+          "mean": 0.9763,
+          "min": 0.9724,
+          "max": 0.9791
+        },
+        "pixel_auroc": {
+          "mean": 0.9692,
+          "min": 0.9675,
+          "max": 0.9714
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9669,
+          "min": 0.9624,
+          "max": 0.9741
+        }
+      },
+      "metal_nut": {
+        "image_auroc": {
+          "mean": 0.9984,
+          "min": 0.9976,
+          "max": 0.9995
+        },
+        "pixel_auroc": {
+          "mean": 0.985,
+          "min": 0.9845,
+          "max": 0.9852
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9984,
+          "min": 0.9966,
+          "max": 1.0
+        }
+      },
+      "screw": {
+        "image_auroc": {
+          "mean": 0.9399,
+          "min": 0.9225,
+          "max": 0.952
+        },
+        "pixel_auroc": {
+          "mean": 0.9785,
+          "min": 0.9776,
+          "max": 0.9799
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9264,
+          "min": 0.924,
+          "max": 0.9299
+        }
+      },
+      "zipper": {
+        "image_auroc": {
+          "mean": 0.9967,
+          "min": 0.9966,
+          "max": 0.9968
+        },
+        "pixel_auroc": {
+          "mean": 0.9826,
+          "min": 0.9826,
+          "max": 0.9827
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9947,
+          "min": 0.9942,
+          "max": 0.995
+        }
+      },
+      "mean": {
+        "image_auroc": 0.9823,
+        "pixel_auroc": 0.9797,
+        "image_auroc_gate_fit": 0.9773
+      }
+    },
+    "patchcore_wr50_10": {
+      "bottle": {
+        "image_auroc": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "pixel_auroc": {
+          "mean": 0.9835,
+          "min": 0.9835,
+          "max": 0.9835
+        },
+        "image_auroc_gate_fit": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "grid": {
+        "image_auroc": {
+          "mean": 0.9788,
+          "min": 0.9783,
+          "max": 0.9799
+        },
+        "pixel_auroc": {
+          "mean": 0.976,
+          "min": 0.9754,
+          "max": 0.9767
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9738,
+          "min": 0.9699,
+          "max": 0.9791
+        }
+      },
+      "metal_nut": {
+        "image_auroc": {
+          "mean": 0.9987,
+          "min": 0.998,
+          "max": 0.999
+        },
+        "pixel_auroc": {
+          "mean": 0.9855,
+          "min": 0.9854,
+          "max": 0.9856
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9976,
+          "min": 0.9956,
+          "max": 1.0
+        }
+      },
+      "screw": {
+        "image_auroc": {
+          "mean": 0.9645,
+          "min": 0.9631,
+          "max": 0.9666
+        },
+        "pixel_auroc": {
+          "mean": 0.9888,
+          "min": 0.9877,
+          "max": 0.9895
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9454,
+          "min": 0.9367,
+          "max": 0.9549
+        }
+      },
+      "zipper": {
+        "image_auroc": {
+          "mean": 0.9942,
+          "min": 0.994,
+          "max": 0.9947
+        },
+        "pixel_auroc": {
+          "mean": 0.9826,
+          "min": 0.9824,
+          "max": 0.9828
+        },
+        "image_auroc_gate_fit": {
+          "mean": 0.9931,
+          "min": 0.9929,
+          "max": 0.9932
+        }
+      },
+      "mean": {
+        "image_auroc": 0.9872,
+        "pixel_auroc": 0.9833,
+        "image_auroc_gate_fit": 0.982
+      }
+    }
+  },
+  "gate": {
+    "padim_r18": {
+      "pooled": {
+        "false_rejects": 19,
+        "n_good": 408,
+        "false_reject_rate": 0.0466,
+        "escapes": 519,
+        "n_defective": 1353,
+        "escape_rate": 0.3836
+      },
+      "promised_per_seed": {
+        "false_rejects": 5.9,
+        "standard_deviation": 2.9
+      },
+      "good_shift_auroc": 0.5635,
+      "per_seed": [
+        {
+          "false_rejects": 5,
+          "n_good": 136,
+          "false_reject_rate": 0.0368,
+          "escapes": 173,
+          "n_defective": 451,
+          "escape_rate": 0.3836
+        },
+        {
+          "false_rejects": 10,
+          "n_good": 136,
+          "false_reject_rate": 0.0735,
+          "escapes": 161,
+          "n_defective": 451,
+          "escape_rate": 0.357
+        },
+        {
+          "false_rejects": 4,
+          "n_good": 136,
+          "false_reject_rate": 0.0294,
+          "escapes": 185,
+          "n_defective": 451,
+          "escape_rate": 0.4102
+        }
+      ],
+      "per_category": {
+        "bottle": {
+          "false_rejects": 4,
+          "n_good": 60,
+          "false_reject_rate": 0.0667,
+          "escapes": 3,
+          "n_defective": 189,
+          "escape_rate": 0.0159,
+          "thresholds": [
+            14.566953,
+            15.008191,
+            18.497372
+          ],
+          "good_shift_auroc": 0.5052
+        },
+        "grid": {
+          "false_rejects": 4,
+          "n_good": 63,
+          "false_reject_rate": 0.0635,
+          "escapes": 36,
+          "n_defective": 171,
+          "escape_rate": 0.2105,
+          "thresholds": [
+            10.937412,
+            10.897147,
+            10.818931
+          ],
+          "good_shift_auroc": 0.5274
+        },
+        "metal_nut": {
+          "false_rejects": 3,
+          "n_good": 66,
+          "false_reject_rate": 0.0455,
+          "escapes": 15,
+          "n_defective": 279,
+          "escape_rate": 0.0538,
+          "thresholds": [
+            14.250577,
+            13.776621,
+            14.792419
+          ],
+          "good_shift_auroc": 0.5837
+        },
+        "screw": {
+          "false_rejects": 1,
+          "n_good": 123,
+          "false_reject_rate": 0.0081,
+          "escapes": 295,
+          "n_defective": 357,
+          "escape_rate": 0.8263,
+          "thresholds": [
+            21.142477,
+            22.737162,
+            20.76029
+          ],
+          "good_shift_auroc": 0.5455
+        },
+        "zipper": {
+          "false_rejects": 7,
+          "n_good": 96,
+          "false_reject_rate": 0.0729,
+          "escapes": 170,
+          "n_defective": 357,
+          "escape_rate": 0.4762,
+          "thresholds": [
+            14.89793,
+            15.480347,
+            16.234179
+          ],
+          "good_shift_auroc": 0.6556
+        }
+      }
+    },
+    "patchcore_r18_1": {
+      "pooled": {
+        "false_rejects": 28,
+        "n_good": 408,
+        "false_reject_rate": 0.0686,
+        "escapes": 158,
+        "n_defective": 1353,
+        "escape_rate": 0.1168
+      },
+      "promised_per_seed": {
+        "false_rejects": 5.9,
+        "standard_deviation": 2.9
+      },
+      "good_shift_auroc": 0.5567,
+      "per_seed": [
+        {
+          "false_rejects": 8,
+          "n_good": 136,
+          "false_reject_rate": 0.0588,
+          "escapes": 44,
+          "n_defective": 451,
+          "escape_rate": 0.0976
+        },
+        {
+          "false_rejects": 12,
+          "n_good": 136,
+          "false_reject_rate": 0.0882,
+          "escapes": 58,
+          "n_defective": 451,
+          "escape_rate": 0.1286
+        },
+        {
+          "false_rejects": 8,
+          "n_good": 136,
+          "false_reject_rate": 0.0588,
+          "escapes": 56,
+          "n_defective": 451,
+          "escape_rate": 0.1242
+        }
+      ],
+      "per_category": {
+        "bottle": {
+          "false_rejects": 0,
+          "n_good": 60,
+          "false_reject_rate": 0.0,
+          "escapes": 0,
+          "n_defective": 189,
+          "escape_rate": 0.0,
+          "thresholds": [
+            1.705726,
+            1.653407,
+            1.862364
+          ],
+          "good_shift_auroc": 0.5778
+        },
+        "grid": {
+          "false_rejects": 4,
+          "n_good": 63,
+          "false_reject_rate": 0.0635,
+          "escapes": 35,
+          "n_defective": 171,
+          "escape_rate": 0.2047,
+          "thresholds": [
+            1.888516,
+            1.887304,
+            1.7771
+          ],
+          "good_shift_auroc": 0.5406
+        },
+        "metal_nut": {
+          "false_rejects": 6,
+          "n_good": 66,
+          "false_reject_rate": 0.0909,
+          "escapes": 2,
+          "n_defective": 279,
+          "escape_rate": 0.0072,
+          "thresholds": [
+            2.265945,
+            2.220729,
+            2.252247
+          ],
+          "good_shift_auroc": 0.5362
+        },
+        "screw": {
+          "false_rejects": 6,
+          "n_good": 123,
+          "false_reject_rate": 0.0488,
+          "escapes": 112,
+          "n_defective": 357,
+          "escape_rate": 0.3137,
+          "thresholds": [
+            1.914954,
+            1.962462,
+            1.970904
+          ],
+          "good_shift_auroc": 0.5394
+        },
+        "zipper": {
+          "false_rejects": 12,
+          "n_good": 96,
+          "false_reject_rate": 0.125,
+          "escapes": 9,
+          "n_defective": 357,
+          "escape_rate": 0.0252,
+          "thresholds": [
+            1.379534,
+            1.341571,
+            1.456278
+          ],
+          "good_shift_auroc": 0.5896
+        }
+      }
+    },
+    "patchcore_wr50_1": {
+      "pooled": {
+        "false_rejects": 34,
+        "n_good": 408,
+        "false_reject_rate": 0.0833,
+        "escapes": 163,
+        "n_defective": 1353,
+        "escape_rate": 0.1205
+      },
+      "promised_per_seed": {
+        "false_rejects": 5.9,
+        "standard_deviation": 2.9
+      },
+      "good_shift_auroc": 0.6012,
+      "per_seed": [
+        {
+          "false_rejects": 9,
+          "n_good": 136,
+          "false_reject_rate": 0.0662,
+          "escapes": 59,
+          "n_defective": 451,
+          "escape_rate": 0.1308
+        },
+        {
+          "false_rejects": 13,
+          "n_good": 136,
+          "false_reject_rate": 0.0956,
+          "escapes": 60,
+          "n_defective": 451,
+          "escape_rate": 0.133
+        },
+        {
+          "false_rejects": 12,
+          "n_good": 136,
+          "false_reject_rate": 0.0882,
+          "escapes": 44,
+          "n_defective": 451,
+          "escape_rate": 0.0976
+        }
+      ],
+      "per_category": {
+        "bottle": {
+          "false_rejects": 1,
+          "n_good": 60,
+          "false_reject_rate": 0.0167,
+          "escapes": 0,
+          "n_defective": 189,
+          "escape_rate": 0.0,
+          "thresholds": [
+            1.784524,
+            1.777705,
+            1.857811
+          ],
+          "good_shift_auroc": 0.6155
+        },
+        "grid": {
+          "false_rejects": 8,
+          "n_good": 63,
+          "false_reject_rate": 0.127,
+          "escapes": 11,
+          "n_defective": 171,
+          "escape_rate": 0.0643,
+          "thresholds": [
+            1.970805,
+            1.923896,
+            1.919481
+          ],
+          "good_shift_auroc": 0.578
+        },
+        "metal_nut": {
+          "false_rejects": 7,
+          "n_good": 66,
+          "false_reject_rate": 0.1061,
+          "escapes": 4,
+          "n_defective": 279,
+          "escape_rate": 0.0143,
+          "thresholds": [
+            2.358049,
+            2.455807,
+            2.341716
+          ],
+          "good_shift_auroc": 0.5448
+        },
+        "screw": {
+          "false_rejects": 6,
+          "n_good": 123,
+          "false_reject_rate": 0.0488,
+          "escapes": 145,
+          "n_defective": 357,
+          "escape_rate": 0.4062,
+          "thresholds": [
+            1.990072,
+            1.988306,
+            1.950061
+          ],
+          "good_shift_auroc": 0.5485
+        },
+        "zipper": {
+          "false_rejects": 12,
+          "n_good": 96,
+          "false_reject_rate": 0.125,
+          "escapes": 3,
+          "n_defective": 357,
+          "escape_rate": 0.0084,
+          "thresholds": [
+            1.550531,
+            1.44177,
+            1.523337
+          ],
+          "good_shift_auroc": 0.719
+        }
+      }
+    },
+    "patchcore_wr50_10": {
+      "pooled": {
+        "false_rejects": 43,
+        "n_good": 408,
+        "false_reject_rate": 0.1054,
+        "escapes": 85,
+        "n_defective": 1353,
+        "escape_rate": 0.0628
+      },
+      "promised_per_seed": {
+        "false_rejects": 5.9,
+        "standard_deviation": 2.9
+      },
+      "good_shift_auroc": 0.6211,
+      "per_seed": [
+        {
+          "false_rejects": 12,
+          "n_good": 136,
+          "false_reject_rate": 0.0882,
+          "escapes": 38,
+          "n_defective": 451,
+          "escape_rate": 0.0843
+        },
+        {
+          "false_rejects": 14,
+          "n_good": 136,
+          "false_reject_rate": 0.1029,
+          "escapes": 29,
+          "n_defective": 451,
+          "escape_rate": 0.0643
+        },
+        {
+          "false_rejects": 17,
+          "n_good": 136,
+          "false_reject_rate": 0.125,
+          "escapes": 18,
+          "n_defective": 451,
+          "escape_rate": 0.0399
+        }
+      ],
+      "per_category": {
+        "bottle": {
+          "false_rejects": 1,
+          "n_good": 60,
+          "false_reject_rate": 0.0167,
+          "escapes": 0,
+          "n_defective": 189,
+          "escape_rate": 0.0,
+          "thresholds": [
+            1.589192,
+            1.599362,
+            1.756142
+          ],
+          "good_shift_auroc": 0.5401
+        },
+        "grid": {
+          "false_rejects": 7,
+          "n_good": 63,
+          "false_reject_rate": 0.1111,
+          "escapes": 9,
+          "n_defective": 171,
+          "escape_rate": 0.0526,
+          "thresholds": [
+            1.762879,
+            1.763848,
+            1.693326
+          ],
+          "good_shift_auroc": 0.6014
+        },
+        "metal_nut": {
+          "false_rejects": 8,
+          "n_good": 66,
+          "false_reject_rate": 0.1212,
+          "escapes": 0,
+          "n_defective": 279,
+          "escape_rate": 0.0,
+          "thresholds": [
+            2.130219,
+            2.156468,
+            2.056564
+          ],
+          "good_shift_auroc": 0.6171
+        },
+        "screw": {
+          "false_rejects": 10,
+          "n_good": 123,
+          "false_reject_rate": 0.0813,
+          "escapes": 73,
+          "n_defective": 357,
+          "escape_rate": 0.2045,
+          "thresholds": [
+            1.713175,
+            1.687312,
+            1.622202
+          ],
+          "good_shift_auroc": 0.6106
+        },
+        "zipper": {
+          "false_rejects": 17,
+          "n_good": 96,
+          "false_reject_rate": 0.1771,
+          "escapes": 3,
+          "n_defective": 357,
+          "escape_rate": 0.0084,
+          "thresholds": [
+            1.387065,
+            1.310501,
+            1.364768
+          ],
+          "good_shift_auroc": 0.7365
+        }
+      }
+    }
+  },
+  "tradeoff": {
+    "padim_r18": [
+      {
+        "target": 0.025,
+        "false_reject_rate": 0.027,
+        "escape_rate": 0.4878
+      },
+      {
+        "target": 0.05,
+        "false_reject_rate": 0.0466,
+        "escape_rate": 0.3836
+      },
+      {
+        "target": 0.075,
+        "false_reject_rate": 0.076,
+        "escape_rate": 0.3385
+      },
+      {
+        "target": 0.1,
+        "false_reject_rate": 0.1005,
+        "escape_rate": 0.2853
+      },
+      {
+        "target": 0.125,
+        "false_reject_rate": 0.1397,
+        "escape_rate": 0.2387
+      },
+      {
+        "target": 0.15,
+        "false_reject_rate": 0.1691,
+        "escape_rate": 0.1959
+      },
+      {
+        "target": 0.175,
+        "false_reject_rate": 0.1936,
+        "escape_rate": 0.1707
+      },
+      {
+        "target": 0.2,
+        "false_reject_rate": 0.25,
+        "escape_rate": 0.1441
+      },
+      {
+        "target": 0.225,
+        "false_reject_rate": 0.2745,
+        "escape_rate": 0.1353
+      },
+      {
+        "target": 0.25,
+        "false_reject_rate": 0.3015,
+        "escape_rate": 0.1123
+      },
+      {
+        "target": 0.275,
+        "false_reject_rate": 0.3211,
+        "escape_rate": 0.105
+      },
+      {
+        "target": 0.3,
+        "false_reject_rate": 0.3505,
+        "escape_rate": 0.0998
+      },
+      {
+        "target": 0.325,
+        "false_reject_rate": 0.3775,
+        "escape_rate": 0.0887
+      },
+      {
+        "target": 0.35,
+        "false_reject_rate": 0.4191,
+        "escape_rate": 0.0769
+      },
+      {
+        "target": 0.375,
+        "false_reject_rate": 0.4387,
+        "escape_rate": 0.0576
+      },
+      {
+        "target": 0.4,
+        "false_reject_rate": 0.4681,
+        "escape_rate": 0.054
+      },
+      {
+        "target": 0.425,
+        "false_reject_rate": 0.5025,
+        "escape_rate": 0.0466
+      },
+      {
+        "target": 0.45,
+        "false_reject_rate": 0.5466,
+        "escape_rate": 0.0384
+      },
+      {
+        "target": 0.475,
+        "false_reject_rate": 0.576,
+        "escape_rate": 0.034
+      },
+      {
+        "target": 0.5,
+        "false_reject_rate": 0.6005,
+        "escape_rate": 0.0303
+      }
+    ],
+    "patchcore_r18_1": [
+      {
+        "target": 0.025,
+        "false_reject_rate": 0.0392,
+        "escape_rate": 0.1811
+      },
+      {
+        "target": 0.05,
+        "false_reject_rate": 0.0686,
+        "escape_rate": 0.1168
+      },
+      {
+        "target": 0.075,
+        "false_reject_rate": 0.0931,
+        "escape_rate": 0.0902
+      },
+      {
+        "target": 0.1,
+        "false_reject_rate": 0.1176,
+        "escape_rate": 0.0754
+      },
+      {
+        "target": 0.125,
+        "false_reject_rate": 0.1495,
+        "escape_rate": 0.0613
+      },
+      {
+        "target": 0.15,
+        "false_reject_rate": 0.1887,
+        "escape_rate": 0.0517
+      },
+      {
+        "target": 0.175,
+        "false_reject_rate": 0.2206,
+        "escape_rate": 0.0473
+      },
+      {
+        "target": 0.2,
+        "false_reject_rate": 0.2672,
+        "escape_rate": 0.0392
+      },
+      {
+        "target": 0.225,
+        "false_reject_rate": 0.3015,
+        "escape_rate": 0.0362
+      },
+      {
+        "target": 0.25,
+        "false_reject_rate": 0.3235,
+        "escape_rate": 0.0296
+      },
+      {
+        "target": 0.275,
+        "false_reject_rate": 0.3407,
+        "escape_rate": 0.0273
+      },
+      {
+        "target": 0.3,
+        "false_reject_rate": 0.3946,
+        "escape_rate": 0.0214
+      },
+      {
+        "target": 0.325,
+        "false_reject_rate": 0.4069,
+        "escape_rate": 0.02
+      },
+      {
+        "target": 0.35,
+        "false_reject_rate": 0.4412,
+        "escape_rate": 0.0192
+      },
+      {
+        "target": 0.375,
+        "false_reject_rate": 0.4559,
+        "escape_rate": 0.0185
+      },
+      {
+        "target": 0.4,
+        "false_reject_rate": 0.4779,
+        "escape_rate": 0.017
+      },
+      {
+        "target": 0.425,
+        "false_reject_rate": 0.4828,
+        "escape_rate": 0.0163
+      },
+      {
+        "target": 0.45,
+        "false_reject_rate": 0.5123,
+        "escape_rate": 0.014
+      },
+      {
+        "target": 0.475,
+        "false_reject_rate": 0.5417,
+        "escape_rate": 0.014
+      },
+      {
+        "target": 0.5,
+        "false_reject_rate": 0.5735,
+        "escape_rate": 0.0133
+      }
+    ],
+    "patchcore_wr50_1": [
+      {
+        "target": 0.025,
+        "false_reject_rate": 0.0466,
+        "escape_rate": 0.1693
+      },
+      {
+        "target": 0.05,
+        "false_reject_rate": 0.0833,
+        "escape_rate": 0.1205
+      },
+      {
+        "target": 0.075,
+        "false_reject_rate": 0.1225,
+        "escape_rate": 0.1079
+      },
+      {
+        "target": 0.1,
+        "false_reject_rate": 0.1569,
+        "escape_rate": 0.0591
+      },
+      {
+        "target": 0.125,
+        "false_reject_rate": 0.1838,
+        "escape_rate": 0.0451
+      },
+      {
+        "target": 0.15,
+        "false_reject_rate": 0.1985,
+        "escape_rate": 0.0436
+      },
+      {
+        "target": 0.175,
+        "false_reject_rate": 0.2328,
+        "escape_rate": 0.0355
+      },
+      {
+        "target": 0.2,
+        "false_reject_rate": 0.2696,
+        "escape_rate": 0.0325
+      },
+      {
+        "target": 0.225,
+        "false_reject_rate": 0.3113,
+        "escape_rate": 0.0303
+      },
+      {
+        "target": 0.25,
+        "false_reject_rate": 0.326,
+        "escape_rate": 0.0259
+      },
+      {
+        "target": 0.275,
+        "false_reject_rate": 0.3578,
+        "escape_rate": 0.0251
+      },
+      {
+        "target": 0.3,
+        "false_reject_rate": 0.3995,
+        "escape_rate": 0.0222
+      },
+      {
+        "target": 0.325,
+        "false_reject_rate": 0.4363,
+        "escape_rate": 0.0185
+      },
+      {
+        "target": 0.35,
+        "false_reject_rate": 0.4657,
+        "escape_rate": 0.0177
+      },
+      {
+        "target": 0.375,
+        "false_reject_rate": 0.5123,
+        "escape_rate": 0.017
+      },
+      {
+        "target": 0.4,
+        "false_reject_rate": 0.5466,
+        "escape_rate": 0.0133
+      },
+      {
+        "target": 0.425,
+        "false_reject_rate": 0.5588,
+        "escape_rate": 0.0126
+      },
+      {
+        "target": 0.45,
+        "false_reject_rate": 0.598,
+        "escape_rate": 0.0118
+      },
+      {
+        "target": 0.475,
+        "false_reject_rate": 0.6201,
+        "escape_rate": 0.0103
+      },
+      {
+        "target": 0.5,
+        "false_reject_rate": 0.6397,
+        "escape_rate": 0.0089
+      }
+    ],
+    "patchcore_wr50_10": [
+      {
+        "target": 0.025,
+        "false_reject_rate": 0.0588,
+        "escape_rate": 0.1256
+      },
+      {
+        "target": 0.05,
+        "false_reject_rate": 0.1054,
+        "escape_rate": 0.0628
+      },
+      {
+        "target": 0.075,
+        "false_reject_rate": 0.1373,
+        "escape_rate": 0.0407
+      },
+      {
+        "target": 0.1,
+        "false_reject_rate": 0.1789,
+        "escape_rate": 0.0303
+      },
+      {
+        "target": 0.125,
+        "false_reject_rate": 0.2353,
+        "escape_rate": 0.0222
+      },
+      {
+        "target": 0.15,
+        "false_reject_rate": 0.2819,
+        "escape_rate": 0.0222
+      },
+      {
+        "target": 0.175,
+        "false_reject_rate": 0.3211,
+        "escape_rate": 0.0177
+      },
+      {
+        "target": 0.2,
+        "false_reject_rate": 0.3529,
+        "escape_rate": 0.0126
+      },
+      {
+        "target": 0.225,
+        "false_reject_rate": 0.3799,
+        "escape_rate": 0.0126
+      },
+      {
+        "target": 0.25,
+        "false_reject_rate": 0.3995,
+        "escape_rate": 0.0126
+      },
+      {
+        "target": 0.275,
+        "false_reject_rate": 0.4167,
+        "escape_rate": 0.0126
+      },
+      {
+        "target": 0.3,
+        "false_reject_rate": 0.4485,
+        "escape_rate": 0.0096
+      },
+      {
+        "target": 0.325,
+        "false_reject_rate": 0.473,
+        "escape_rate": 0.0074
+      },
+      {
+        "target": 0.35,
+        "false_reject_rate": 0.5049,
+        "escape_rate": 0.0052
+      },
+      {
+        "target": 0.375,
+        "false_reject_rate": 0.5441,
+        "escape_rate": 0.0052
+      },
+      {
+        "target": 0.4,
+        "false_reject_rate": 0.5735,
+        "escape_rate": 0.003
+      },
+      {
+        "target": 0.425,
+        "false_reject_rate": 0.5907,
+        "escape_rate": 0.0022
+      },
+      {
+        "target": 0.45,
+        "false_reject_rate": 0.6078,
+        "escape_rate": 0.0022
+      },
+      {
+        "target": 0.475,
+        "false_reject_rate": 0.6422,
+        "escape_rate": 0.0022
+      },
+      {
+        "target": 0.5,
+        "false_reject_rate": 0.6642,
+        "escape_rate": 0.0022
+      }
+    ]
+  },
+  "cost": {
+    "padim_r18": {
+      "n_train": 320,
+      "fit_seconds": 112.7,
+      "detector_megabytes": 126.7,
+      "n_images": 160,
+      "median_ms": 405.1,
+      "p95_ms": 496.9,
+      "peak_rss_megabytes": 908
+    },
+    "patchcore_r18_1": {
+      "n_train": 320,
+      "fit_seconds": 79.4,
+      "detector_megabytes": 3.9,
+      "n_images": 160,
+      "median_ms": 368.6,
+      "p95_ms": 467.5,
+      "peak_rss_megabytes": 793
+    },
+    "patchcore_wr50_1": {
+      "n_train": 320,
+      "fit_seconds": 159.5,
+      "detector_megabytes": 15.4,
+      "n_images": 160,
+      "median_ms": 221.0,
+      "p95_ms": 248.9,
+      "peak_rss_megabytes": 1125
+    },
+    "patchcore_wr50_10": {
+      "n_train": 320,
+      "fit_seconds": 180.7,
+      "detector_megabytes": 154.1,
+      "n_images": 160,
+      "median_ms": 334.1,
+      "p95_ms": 390.9,
+      "peak_rss_megabytes": 1516
+    }
+  },
+  "cost_setup": {
+    "category": "screw",
+    "cpu": "Intel(R) Core(TM) i9-14900HX",
+    "threads": 4,
+    "warmup_images": 10,
+    "torch": "2.11.0+cu128",
+    "other_cpu_load_percent": 54
+  }
+}
