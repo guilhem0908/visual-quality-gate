@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visual-quality-gate"
+version = "0.1.0"
+description = "Training-free visual quality gate: PaDiM and PatchCore written from scratch and measured on MVTec AD."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Guilhem Carmouze" }]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "pillow>=10.0",
+    "matplotlib>=3.8",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "scikit-learn>=1.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "dataset: needs the MVTec AD subset and the pretrained weights (skipped in CI)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM", "RUF"]
+ignore = ["N803", "N806", "N812"]  # matrix names follow the papers; F is the torch idiom

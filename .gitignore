@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Dataset, pretrained weights and intermediate caches are downloaded or rebuilt, never committed
+data/
+cache/
+.torch/
